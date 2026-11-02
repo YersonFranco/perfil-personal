@@ -1,53 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi perfil personal</title>
-    <style>
-        img {
-            width: 200px;
-            height: 200px;
-        }
-    </style>
+    <meta name="description" content="Perfil personal de Yerson Franco: presentación, hobbies, metas, enlaces y horario de estudio.">
+    <title>Mi perfil personal | Yerson Franco</title>
 </head>
 <body>
-    <h1>Yerson Franco</h1>
-    <img src="img/foto-perfil.jpg" alt="Foto de Franco">
-    <p> Soy <strong>coder de Riwi</strong> y estoy aprendiendo <em>desarrollo web</em>.</p>
-    <h2>Mis hobbies</h2>
-        <ul>
-            <li>Basketball</li>
-            <li>Videojuegos</li>
-            <li>Musica</li>
-    </ul>
-    <h2>Mis metas</h2>
-        <ol>
-            <li>Apreder desarrollo</li>
-            <li>Apreder ingles</li>
-            <li>Aprender hablidades socioemocionales</li>
-        </ol>
-    <h2>Mis enlaces</h2>
-        <ul>
-            <li><a href="https://github.com/YersonFranco" target="_blank">Mi perfil de GitHub</a></li>
-        </ul>
-<h2>Mi horario de estudio</h2>
-<table border="1">
-  <caption>Horario semanal</caption>
-  <thead>
-    <tr>
-      <th scope="col">Día</th>
-      <th scope="col">Actividad</th>
-      <th scope="col">Horario</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Lunes</td>
-      <td>HTML</td>
-      <td>7:00 a.m.</td>
-    </tr>
-  </tbody>
-</table>
+    <header>
+        <h1>Yerson Franco</h1>
+    </header>
+
+    <main>
+        <section aria-labelledby="titulo-presentacion">
+            <h2 id="titulo-presentacion">Sobre mí</h2>
+            <figure>
+                <img src="img/foto-perfil.jpg" alt="Foto de perfil de Yerson Franco">
+                <figcaption>Yerson Franco</figcaption>
+            </figure>
+            <p>Soy <strong>coder de Riwi</strong> y estoy aprendiendo <em>desarrollo web</em>.</p>
+        </section>
+
+        <section aria-labelledby="titulo-hobbies">
+            <h2 id="titulo-hobbies">Mis hobbies</h2>
+            <ul>
+                <li>Baloncesto</li>
+                <li>Videojuegos</li>
+                <li>Música</li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="titulo-metas">
+            <h2 id="titulo-metas">Mis metas</h2>
+            <ol>
+                <li>Aprender desarrollo de software</li>
+                <li>Aprender inglés</li>
+                <li>Aprender habilidades socioemocionales</li>
+            </ol>
+        </section>
+
+        <section aria-labelledby="titulo-enlaces">
+            <h2 id="titulo-enlaces">Mis enlaces</h2>
+            <nav aria-label="Enlaces personales">
+                <ul>
+                    <li>
+                        <a href="https://github.com/YersonFranco" target="_blank" rel="noopener noreferrer">
+                            Mi perfil de GitHub
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
+        <section aria-labelledby="titulo-horario">
+            <h2 id="titulo-horario">Mi horario de estudio</h2>
+            <table>
+                <caption>Horario semanal</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Día</th>
+                        <th scope="col">Actividad</th>
+                        <th scope="col">Horario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Lunes</th>
+                        <td>HTML</td>
+                        <td>7:00 a. m.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>Perfil personal de Yerson Franco</p>
+    </footer>
 </body>
 </html>
